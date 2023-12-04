@@ -3,34 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo-pets.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Pets</title>
 </head>
-<body>
+<body class="light-mode" oncopy="copyFunction()">
     <header>
-        <h1>Pets</h1>
+        <a href = "#main" class="paddingclass" id="skip">Skip to Main Content</a>
+        <nav>
+            <div class="hamburger">
+                <span class="navigationbar">&#9776;</span> 
+                <ul class="grid-list">
+                    <li><a href="index.html" class="current">Home/Pets</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider round"></span> 
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
     </header>
-    <a href = "#main" id="skip">Skip to Main Content</a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home/Pets</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="travel.html">Travel</a></li>
-        </ul>
-    </nav>
-    <main id="main">
+    <div class="overview">
+        <h1>Pets</h1>
+    </div>
+    <h2>
+        Random Pet Fact:
+    </h2>
+    <p id="petFact"></p>
+    <main class="container" id="main">
         <div>
             <h2>Terry</h2>
-            <img src="images/terry_sitting.jpg" width="400" alt="Black dachshund wearing leash and sitting">
-            <p>Terry is a playful and spirited dachshund that loves to play fetch with his bone or tennis ball. He loves wandering in forests and finding large sticks to take home. His favorite foods are kibble and peanut butter. Terry will run around frantically when it’s time to eat at home.</p>
-            <p>My family found Terry at a shelter and decided to adopt it. He was 4 months old and is now 8 years old. Terry knows how to swim, but we don’t tend to go often. Terry got poison ivy once; however, he quickly recovered and has been doing great since</p>
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/terry_sitting.jpg" width="400" alt="Black dachshund wearing leash and sitting">
+                </div>
+                <div class="text-box">
+                    <p>
+                        Terry is a playful and spirited dachshund that loves to play fetch with his bone or tennis ball. He loves wandering in forests and finding large sticks to take home. His favorite foods are kibble and peanut butter. Terry will run around frantically when it’s time to eat at home. My family found Terry at a shelter and decided to adopt him. He was 4 months old and is now 8 years old. Terry knows how to swim, but we don’t tend to go often. Terry got poison ivy once; however, he quickly recovered and has been doing great since.
+                    </p>
+                </div>
+            </div>            
             <h3>Photo Gallery</h3>
-            <img src="images/terry_beach.jpg" width ="200" alt = "Black dachshund wearing sunglasses at a beach">
-            <img src="images/terry_stick.jpg"  width ="200" alt="Black dachshund holding stick at lake on rocks">
-            <img src="images/terry_minion.jpg"  width ="200" alt="Black dachshund wearing a Minion costume">
-            <img src="images/terry_reed.jpg"  width ="200" alt="Black dachshund holding a reed on street">
+            <p class="fun" >Click image to see more!</p>
+            <div class="gridstuff slideshow-container1">
+                <img src="images/terry_beach.jpg" class="active"  width ="200" alt = "Black dachshund wearing sunglasses at a beach">
+                <img src="images/terry_stick.jpg"  width ="200" alt="Black dachshund holding stick at lake on rocks">
+                <img src="images/terry_minion.jpg"  width ="200" alt="Black dachshund wearing a Minion costume">
+                <img src="images/terry_reed.jpg"  width ="200" alt="Black dachshund holding a reed on street">
+            </div>
 
             <h3>Likes</h3>
-            <ul>
+            <ul class="poop">
                 <li>Fetch</li>
                 <li>Eating</li>
                 <li>Belly Rubs</li>
@@ -40,17 +70,27 @@
         </div>
         <div>
             <h2>Jingle</h2>
-            <img src="images/jingle.jpg" width="400" alt="Jingle is a domestic shorthair cat with a white chest and belly and a striped black and gray back.">
-            <p>Jingle loves going outside. He used to be an outdoor/indoor cat until we realized that he loved to get injured. Now, we take him on walks with a leash which he loves! Every time he sees me carrying the leash he goes crazy and meows to go out.</p>
-            <p>Jingle is very mischievous, he has gotten into many different accidents. His first accident was outside; a bee stung his paw and he cried all night long. The second one was ALSO outside, he got stuck on a tree for four days. Finally, he came back home one day with his tail bleeding and ripped out.</p>
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/jingle.jpg" width="400" alt="Jingle is a domestic shorthair cat with a white chest and belly and a striped black and gray back.">
+                </div>
+                <div class="text-box">
+                    <p>
+                        Jingle loves going outside. He used to be an outdoor/indoor cat until we realized that he loved to get injured. Now, we take him on walks with a leash which he loves! Every time he sees me carrying the leash he goes crazy and meows to go out. Jingle is very mischievous, he has gotten into many different accidents. His first accident was outside; a bee stung his paw and he cried all night long. The second one was ALSO outside, he got stuck on a tree for four days. Finally, he came back home one day with his tail bleeding and ripped out.
+                    </p>
+                </div>
+            </div>
             <h3>Photo Gallery</h3>
-            <img src="images/jingle_outside.jpg" width ="200" alt = "A close up picture of Jingle's face outside">
-            <img src="images/jingle_flowers.jpg"  width ="200" alt="Jingle sitting next to the flowers in our garden">
-            <img src="images/jingle_snow.jpg"  width ="200" alt="Jingle in the snow">
-            <img src="images/jingle_window.jpg"  width ="200" alt="Jingle watching the snow outside">
+            <p class="fun" >Click image to see more!</p>
+            <div class="gridstuff slideshow-container2">
+                <img src="images/jingle_outside.jpg" class="active"  width ="200" alt = "A close up picture of Jingle's face outside">
+                <img src="images/jingle_flowers.jpg"  width ="200" alt="Jingle sitting next to the flowers in our garden">
+                <img src="images/jingle_snow.jpg"  width ="200" alt="Jingle in the snow">
+                <img src="images/jingle_window.jpg"  width ="200" alt="Jingle watching the snow outside">
+            </div>
 
             <h3>Likes</h3>
-            <ul>
+            <ul class="poop">
                 <li>Going on walks</li>
                 <li>Being pet</li>
                 <li>Eating treats</li>
@@ -60,42 +100,61 @@
         </div>
         <div>
             <h2>Bacon Q Dog</h2>
-            <img src="images/bacon.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
-
-            <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
-            <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
+            <div class="about">
+                <div class="about-image" >
+                    <img src="images/bacon.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
+                </div>
+                <div class="text-box">
+                    <p>
+                        Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them. At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.
+                    </p>
+                </div>
+            </div>
             <h3>Photo Gallery</h3>
-            <img src="images/bacon_bandana.JPG" width ="200" alt = "Brown labradoodle wearing an orange bandana">
-            <img src="images/bacon_graduation.JPG"  width ="200" alt="Small labradoodle puppy wearing a graduation cap and gown">
-            <video width="200"  controls>
-                <source src="images/bacon_agility.mov">
-                Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
-            </video>
-            <img src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+            <p class="fun" >Click image to see more!</p>
+            <div class="gridstuff slideshow-container3">
+                <img src="images/bacon_bandana.JPG" class="active"  width ="200" alt = "Brown labradoodle wearing an orange bandana">
+                <img src="images/bacon_graduation.JPG"  width ="200" alt="Small labradoodle puppy wearing a graduation cap and gown">
+                <video width="200"  controls>
+                    <source src="images/bacon_agility.mov">
+                    Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+                </video>
+                <img src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+            </div>
 
             <h3>Likes</h3>
-            <ul>
+            <ul class="poop">
                 <li>Belly rubs</li>
-                <li>Playing tug-of-war</li>
-                <li>Sneaking onto the couch</li>
+                <li>Tug-of-war</li>
+                <li>Couch Time</li>
             </ul>
             <!-- Colleen van Lent -->
         
         </div>
         <div>
             <h2>Carter</h2>
-            <img src="images/carter.jpeg" width = "400" alt="Carter is a husky with black, gray, and white fur.">
 
-            <p>Carter was born in Seattle. However, my brother bought him and brought him to Boston. Whenever my brother did not have time to walk Carter, he would put him on the treadmill. When Carter became too much of a responsibility for my brother as a college student, he took Carter to Vancouver to live with my mom, sister, and me. Because we lived in the mountains, he would sometimes howl in the middle of the night whenever he saw a wild animal.</p> 
-            <P>Whenever I threw him a ball, he ran to the ball but never brought it back to me. He would sometimes escape the backyard of our house if we forgot to close the gates by accident. Even if we looked for him everywhere and did not find him, he knew the way home and always came back in the end. He loved going to the forest and the beach. He had his own spot on the living room couch and would television with us if he was bored or tired.</P>
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/carter.jpeg" width = "400" alt="Carter is a husky with black, gray, and white fur.">
+                </div>
+                <div class="text-box">
+                    <p>
+                        Carter was born in Seattle. However, my brother bought him and brought him to Boston. Whenever my brother did not have time to walk Carter, he would put him on the treadmill. When Carter became too much of a responsibility for my brother as a college student, he took Carter to Vancouver to live with my mom, sister, and me. Because we lived in the mountains, he would sometimes howl in the middle of the night whenever he saw a wild animal. Whenever I threw him a ball, he ran to the ball but never brought it back to me. He would sometimes escape the backyard of our house if we forgot to close the gates by accident. Even if we looked for him everywhere and did not find him, he knew the way home and always came back in the end. He loved going to the forest and the beach. He had his own spot on the living room couch and would television with us if he was bored or tired.
+                    </p>
+                </div>
+            </div>
             <h3>Photo Gallery</h3>
-            <img src="images/carter_young.jpeg" width ="200" alt = "Carter when he was only a few months old">
-            <img src="images/carter_canada.jpeg"  width ="200" alt="Carter's look on Canada Day">
-            <img src="images/carter_forest.jpeg"  width ="200" alt="Carter playing and staring into the forest">
-            <img src="images/carter_beach.jpeg"  width ="200" alt="Carter at the beach in front of his name">
+            <p class="fun" >Click image to see more!</p>
+            <div class="gridstuff slideshow-container4">
+                <img src="images/carter_young.jpeg" width ="200" class="active"  alt = "Carter when he was only a few months old">
+                <img src="images/carter_canada.jpeg"  width ="200" alt="Carter's look on Canada Day">
+                <img src="images/carter_forest.jpeg"  width ="200" alt="Carter playing and staring into the forest">
+                <img src="images/carter_beach.jpeg"  width ="200" alt="Carter at the beach in front of his name">
+            </div>
 
             <h3>Likes</h3>
-            <ul>
+            <ul class="poop">
                 <li>Treats</li>
                 <li>Beach</li>
                 <li>Forest</li>
@@ -105,18 +164,28 @@
         </div>
         <div>
             <h2>Lucy</h2>
-            <img src="images/Lucy.JPG" width = "400" alt="Calico with white, orange, and black coloring">
 
-            <p>Lucy is a 17-year-old calico that I've had since I was 5, she has pretty much grown up with me my whole life. Even though she’s old she’s still kickin’ it and enjoys running around the house at 4am.</p> 
-            <P>Her favorite foods include anything but her kibble. She enjoys sunbathing and long naps, along with lots of petting. However, she hates getting her stomach rubbed.</P>
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/Lucy.JPG" width = "400" alt="Calico with white, orange, and black coloring">
+                </div>
+                <div class="text-box">
+                    <p>
+                        Lucy is a 17-year-old calico that I've had since I was 5; she has pretty much grown up with me my whole life. Even though she’s old, she’s still kickin’ it and enjoys running around the house at 4 am. Her favorite foods include anything but her kibble. She enjoys sunbathing and long naps, along with lots of petting. However, she hates getting her stomach rubbed.
+                    </p>
+                </div>
+            </div>
             <h3>Photo Gallery</h3>
-            <img src="images/Lucy_upsidedown.JPG" width ="200" alt = "Lucy laying on her back">
-            <img src="images/Lucy_sleeping.JPG"  width ="200" alt="Lucy curled up in her bed sleeping">
-            <img src="images/Lucy_sleepingpt2.JPG"  width ="200" alt="Lucy curled up sleeping">
-            <img src="images/Lucy_laying.JPG"  width ="200" alt="Lucy laying staring at the camera">
+            <p class="fun" >Click image to see more!</p>
+            <div class="gridstuff slideshow-container5">
+                <img src="images/Lucy_upsidedown.JPG" class="active"  width ="200" alt = "Lucy laying on her back">
+                <img src="images/Lucy_sleeping.JPG"  width ="200" alt="Lucy curled up in her bed sleeping">
+                <img src="images/Lucy_sleepingpt2.JPG"  width ="200" alt="Lucy curled up sleeping">
+                <img src="images/Lucy_laying.JPG"  width ="200" alt="Lucy laying staring at the camera">
+            </div>
 
             <h3>Likes</h3>
-            <ul>
+            <ul class="poop">
                 <li>Sleeping</li>
                 <li>Food</li>
                 <li>Her Bed</li>
@@ -124,7 +193,8 @@
             <!-- Maggie Holman -->
         
         </div>
+
     </main>
-    
+    <script src="javascript/index.js"></script>
 </body>
 </html>

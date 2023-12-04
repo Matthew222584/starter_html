@@ -3,31 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo-recipes.jpeg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Recipes</title>
     </head>
-    <body>
+    <body class="light-mode" oncopy="copyFunction()">
         <header>
-            <h1>Recipes</h1>
+            <a href = "#main" class="paddingclass" id="skip">Skip to Main Content</a>
+            <nav>
+                <div class="hamburger">
+                    <span class="navigationbar">&#9776;</span> 
+                    <ul class="grid-list">
+                        <li><a href="index.html">Home/Pets</a></li>
+                        <li><a href="recipes.html" class="current">Recipes</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li>
+                            <label class="switch">
+                                <input type="checkbox" id="darkModeToggle">
+                                <span class="slider round"></span> 
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        <a href = "#main" id="skip">Skip to Main Content</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home/Pets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="travel.html">Travel</a></li>
-            </ul>
-        </nav>
-        <main id="main">
+        <div class="overview">
+            <h1>Recipes</h1>
+        </div>
+        <main class="container" id="main">
             <div>
                 <h2>Dead Simple Fried Rice</h2>
-                <span>Origin: American/East Asian</span>
-                <span>Source: Self</span>
-                <span>Category: Main Dish</span>
 
-                <img src="images/dead-simple-fried-rice-primary.jpg" width = "400" alt="Dead Simple Fried Rice">
-                <p>This Dead Simple Fried Rice recipe is an incredibly modular and tasty dish. At its core, it's just rice, vegetables, protein, and oil. As such, the dish can be modified to serve as many or as few people as needed with a wide variety of food preferences. Experimentation with what specific ingredients you enjoy the most will unlock the full potential of this dish.</p>
+                <div class="about">
+                    <div class="about-image">
+                        <img src="images/dead-simple-fried-rice-primary.jpg" width = "400" alt="Dead Simple Fried Rice">
+                    </div>
+                    <div class="text-box">
+                        <div>Origin: American/East Asian</div>
+                        <div>Source: Self</div>
+                        <div>Category: Main Dish</div>
+                        <p>This Dead Simple Fried Rice recipe is an incredibly modular and tasty dish. At its core, it's just rice, vegetables, protein, and oil. As such, the dish can be modified to serve as many or as few people as needed with a wide variety of food preferences. Experimentation with what specific ingredients you enjoy the most will unlock the full potential of this dish.</p>
+                    </div>
+                </div>    
+
                 <h3>Recipe Ingredients</h3>
-                <ul>
+                <ul class="recipes">
                     <li>Long-grain white rice</li>
                     <li>Frozen Vegetables</li>
                     <li>Eggs</li>
@@ -57,21 +79,31 @@
                 </ol>
 
                 <h3>Additional Food images</h3>
-                <img src="images/dead-simple-fried-rice-1.jpg" width = "200" alt="Dead Simple Fried Rice packed for lunch">
-                <img src="images/dead-simple-fried-rice-2.jpg" width = "200" alt="Another photo of the Dead Simple Fried Rice in a frying pan">
-                <img src="images/dead-simple-fried-rice-3.jpg" width = "200" alt="An additional photo of the Dead Simple Fried Rice in a frying pan">
+                <p class="fun" >Click image to see more!</p>
+                <div class="gridstuff slideshow-container6">
+                    <img src="images/dead-simple-fried-rice-1.jpg" class="active" width = "200" alt="Dead Simple Fried Rice packed for lunch">
+                    <img src="images/dead-simple-fried-rice-2.jpg" width = "200" alt="Another photo of the Dead Simple Fried Rice in a frying pan">
+                    <img src="images/dead-simple-fried-rice-3.jpg" width = "200" alt="An additional photo of the Dead Simple Fried Rice in a frying pan">
+                </div>
 
                 <!-- Tristan Goodell -->
 
             </div>
             <div>
                 <h2>White Sauce Pasta</h2>
-                <span>Origin: France/Italy</span>
-                <span>Source: Own Recipe</span>
-                <span>Category: Main Dish</span>
 
-                <img src="images/White_Sauce_Pasta.JPG" width = "400" alt="White Sauce Pasta">
-                <p>White sauce pasta is a creamy and savory dish that can be enjoyed for either lunch or dinner. Inspired by a fusion of Italian and French cuisine, the rough texture of rigatoni pasta allows for heavier sauces to be picked up, including the flavor profile of this delicious sauce. This union of two cultures allows for the perfect balance between each component of the recipe, creating a fulfilling entree that every individual can enjoy.</p>
+                <div class="about">
+                    <div class="about-image">
+                        <img src="images/White_Sauce_Pasta.JPG" width = "400" alt="White Sauce Pasta">
+                    </div>
+                    <div class="text-box">
+                        <div>Origin: France/Italy</div>
+                        <div>Source: Own Recipe</div>
+                        <div>Category: Main Dish</div>
+                        <p>White sauce pasta is a creamy and savory dish that can be enjoyed for either lunch or dinner. Inspired by a fusion of Italian and French cuisine, the rough texture of rigatoni pasta allows for heavier sauces to be picked up, including the flavor profile of this delicious sauce. This union of two cultures allows for the perfect balance between each component of the recipe, creating a fulfilling entree that every individual can enjoy.</p>
+                    </div>
+                </div>    
+
                 <h3>Recipe Ingredients</h3>
                 <ul>
                     <li>Olive Oil</li>
@@ -106,21 +138,31 @@
                 </ol>
 
                 <h3>Additional Food images</h3>
-                <img src="images/BoiledRigatoniPasta.jpg" width = "200" alt="Boiled Rigatoni Pasta in a Strainer">
-                <img src="images/SauteedOnions.jpeg" width = "200" alt="Sauteed Onions in a Pan">
-                <img src="images/WhiteSauce.jpeg" width = "200" alt="White Sauce in a Pan">
+                <p class="fun" >Click image to see more!</p>
+                <div class="gridstuff slideshow-container7">
+                    <img src="images/BoiledRigatoniPasta.jpg" class="active" width = "200" alt="Boiled Rigatoni Pasta in a Strainer">
+                    <img src="images/SauteedOnions.jpeg" width = "200" alt="Sauteed Onions in a Pan">
+                    <img src="images/WhiteSauce.jpeg" width = "200" alt="White Sauce in a Pan">
+                </div>
 
                 <!-- Lina Lin -->
 
             </div>
             <div>
                 <h2>Double Chocolate Cookies</h2>
-                <span>Origin: Michigan</span>
-                <span>Source: Family Recipe</span>
-                <span>Category: Dessert</span>
 
-                <img src="images/double_chocolate_cookies.png" width = "400" alt="">
-                <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p>
+                <div class="about">
+                    <div class="about-image">
+                        <img src="images/double_chocolate_cookies.png" width = "400" alt="">
+                    </div>
+                    <div class="text-box">
+                        <div>Origin: Michigan</div>
+                        <div>Source: Family Recipe</div>
+                        <div>Category: Dessert</div>
+                        <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p>
+                    </div>
+                </div>  
+
                 <h3>Recipe Ingredients</h3>
                 <ul>
                     <li>Unsalted butter</li>
@@ -149,21 +191,31 @@
                 </ol>
 
                 <h3>Additional Food images</h3>
-                <img src="images/double_chocolate_chips.png" width = "200" alt="A small pile of chocolate chips">
-                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545" width = "200" alt="Chocolate melting in a boiler">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG" width = "200" alt="Brown sugar in three different shades of darkness">
+                <p class="fun" >Click image to see more!</p>
+                <div class="gridstuff slideshow-container8">
+                    <img src="images/double_chocolate_chips.png" class="active" width = "200" alt="A small pile of chocolate chips">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545" width = "200" alt="Chocolate melting in a boiler">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG" width = "200" alt="Brown sugar in three different shades of darkness">
+                </div>
 
                 <!-- Colleen van Lent -->
 
             </div>
             <div>
                 <h2>Twice Baked Potato</h2>
-                <span>Origin: South American</span>
-                <span>Source: <a href="https://www.allrecipes.com/recipe/24332/ultimate-twice-baked-potatoes/">Recipe Source Link</a></span>
-                <span>Category: Main Dish, Comfort Food</span>
 
-                <img src="images/Bakedpotato.jpeg" width = "400" alt="Twice Baked Potato">
-                <p>These twice-baked potatoes work perfectly as a simple, crowd-pleasing entrée or as a rich side dish. It is believed that baked potatoes originate from South America, or more specifically, Peru. The Inca Indians in Peru were said to be the first to originally cultivate potatoes and when the Spanish conquistadors conquered Peru, they brought the potato to Europe.</p>
+                <div class="about">
+                    <div class="about-image">
+                        <img src="images/Bakedpotato.jpeg" class="active" width = "400" alt="Twice Baked Potato">
+                    </div>
+                    <div class="text-box">
+                        <div>Origin: South American</div>
+                        <div>Source: <a href="https://www.allrecipes.com/recipe/24332/ultimate-twice-baked-potatoes/">Recipe Source Link</a></div>
+                        <div>Category: Main Dish, Comfort Food</div>
+                        <p>These twice-baked potatoes work perfectly as a simple, crowd-pleasing entrée or as a rich side dish. It is believed that baked potatoes originate from South America, or more specifically, Peru. The Inca Indians in Peru were said to be the first to originally cultivate potatoes and when the divish conquistadors conquered Peru, they brought the potato to Europe.</p>
+                    </div>
+                </div>    
+
                 <h3>Recipe Ingredients</h3>
                 <ul>
                     <li>4 large baking potatoes</li>
@@ -189,21 +241,31 @@
                 </ol>
 
                 <h3>Additional Food images</h3>
-                <img src="images/Ingredients.jpeg" width = "200" alt="All the ingredients needed for this recipe">
-                <img src="images/Slicedpotatoes.jpeg" width = "200" alt="Scooped out potatoes">
-                <img src="images/mixture.jpeg" width = "200" alt="Mixture to put in the potatoes">
+                <p class="fun" >Click image to see more!</p>
+                <div class="gridstuff slideshow-container9">
+                    <img src="images/Ingredients.jpeg" class="active" width = "200" alt="All the ingredients needed for this recipe">
+                    <img src="images/Slicedpotatoes.jpeg" width = "200" alt="Scooped out potatoes">
+                    <img src="images/mixture.jpeg" width = "200" alt="Mixture to put in the potatoes">
+                </div>
 
                 <!-- Sanjida Eva -->
 
             </div>
             <div>
                 <h2>Tomato basil pasta</h2>
-                <span>Origin: Italian</span>
-                <span>Source: <a href="https://www.bonappetit.com/recipe/pasta-with-no-cook-tomato-sauce/">Recipe Source Link</a></span>
-                <span>Category: Main Dish</span>
 
-                <img src="images/basically-no-cook-tomato-sauce.jpg" width = "400" alt="Pasta">
-                <p>This recipe is a fantastic way to step up your pasta game without taking too much more of your time. It tastes way better than basic pasta with jarred sauce! I originally found this when my sister made it, and got the recipe off of Bon Appetit's website. PS avoid using the shaker parmesan - I used that the first time I made this and it drew down the quality of the dish.</p>
+                <div class="about">
+                    <div class="about-image">
+                        <img src="images/basically-no-cook-tomato-sauce.jpg" width = "400" alt="Pasta">
+                    </div>
+                    <div class="text-box">
+                        <div>Origin: Italian</div>
+                        <div>Source: <a href="https://www.bonappetit.com/recipe/pasta-with-no-cook-tomato-sauce/">Recipe Source Link</a></div>
+                        <div>Category: Main Dish</div>
+                        <p>This recipe is a fantastic way to step up your pasta game without taking too much more of your time. It tastes way better than basic pasta with jarred sauce! I originally found this when my sister made it, and got the recipe off of Bon Appetit's website. PS avoid using the shaker parmesan - I used that the first time I made this and it drew down the quality of the dish.</p>
+                    </div>
+                </div>    
+
                 <h3>Recipe Ingredients</h3>
                 <ul>
                     <li>Pasta</li>
@@ -229,14 +291,18 @@
                 </ol>
 
                 <h3>Additional Food images</h3>
-                <img src="images/tomato.jpg" width = "200" alt="A juicy tomato with water droplets.">
-                <img src="images/basil.jpg" width = "200" alt="A few leaves of basil.">
-                <img src="images/fettuccine.jpg" width = "200" alt="Some fettuccine in a pot of boiling water.">
+                <p class="fun" >Click image to see more!</p>
+                <div class="gridstuff slideshow-container10">
+                    <img src="images/tomato.jpg" class="active" width = "200" alt="A juicy tomato with water droplets.">
+                    <img src="images/basil.jpg" width = "200" alt="A few leaves of basil.">
+                    <img src="images/fettuccine.jpg" width = "200" alt="Some fettuccine in a pot of boiling water.">
+                </div>
 
                 <!-- Leif Doxey-Van Heest -->
 
             </div>
  
         </main>
+        <script src="javascript/recipes.js"></script>
     </body>
 </html>

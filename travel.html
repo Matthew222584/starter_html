@@ -3,215 +3,270 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo-travel.jpeg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Travel</title>
     </head>
-    <body>
+    <body class="light-mode" oncopy="copyFunction()">
         <header>
-            <h1>Travel</h1>
+            <a href = "#main" class="paddingclass" id="skip">Skip to Main Content</a>
+            <nav>
+                <div class="hamburger">
+                    <span class="navigationbar">&#9776;</span> 
+                    <ul class="grid-list">
+                        <li><a href="index.html">Home/Pets</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="travel.html" class="current">Travel</a></li>
+                        <li>
+                            <label class="switch">
+                                <input type="checkbox" id="darkModeToggle">
+                                <span class="slider round"></span> 
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        <a href = "#main" id="skip">Skip to Main Content</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home/Pets</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="travel.html">Travel</a></li>
-            </ul>
-        </nav>
-        <main id="main">
+        <div class="overview">
+            <h1>Travel</h1>
+        </div>
+        <main class="container" id="main">
         <div>
             <h2>Zion National Park</h2>
-            <img src="images/Zion_River.jpg" alt="Zion River Still" width="400" height="400">
-            <img src="images/Zion_River.gif" alt="Zion River Moving" width="400" height="400">
+
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/Zion_River.jpg" id="static" alt="Zion River Still" width="400" height="400">
+                    <img src="images/Zion_River.gif" id="moving" alt="Zion River Moving" width="400" height="400">
+                </div>
+                <div class="text-box">
+                    <p>
+                        Found in southwestern Utah, Zion National Park spreads over 229 square miles. The park is known for its sandstone cliffs, deep canyons, and vast mesas, giving it a unique beauty that everyone should try to experience . Along with this Zion offers a wide variety of Flora and Fauna that differs each season making it a hot destination all year round.  Having over 112 trails available to hike, walk, and even camp at, people from all over the world are traveling to Zion to see just how amazing it truly is. With trails that range from riverside walks all the way to hikes that have you scaling long bluffs to reach a peak, Zion has something that every outdoorsman can enjoy. However it is not all sunshines and rainbows, and there are dangers that come with these trails that all hikers should read and learn about before their expedition.
+                    </p>
+                </div>
+            </div>            
+
             <h3>Geographical Location: North America</h3>
-    
-            <p>Found in southwestern Utah, Zion National Park spreads over 229 square miles. The park is known for its sandstone cliffs, deep canyons, and vast mesas, giving it a unique beauty that everyone should try to experience . Along with this Zion offers a wide variety of Flora and Fauna that differs each season making it a hot destination all year round.</p>
-            <p>Having over 112 trails available to hike, walk, and even camp at, people from all over the world are traveling to Zion to see just how amazing it truly is. With trails that range from riverside walks all the way to hikes that have you scaling long bluffs to reach a peak, Zion has something that every outdoorsman can enjoy. However it is not all sunshines and rainbows, and there are dangers that come with these trails that all hikers should read and learn about before their expedition.</p>
             <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/Zion_Angels_Landing.jpg" alt="Angels Landing hike from afar" width="200" height="200">
-                <figcaption>One of the most popular (and dangerous) hikes Zion has to offer </figcaption>
-            </figure>
-    
-            <figure>
-                <img src="images/Zion_Large_Canyon.jpg" alt="Deep canyon in the summer" width="200" height="200">
-                <figcaption>A typical day in Zion</figcaption>
-            </figure>
-    
-            <figure>
-                <img src="images/Zion_River_Tunnel.jpg" alt="Water tunnel" width="200" height="200">
-                <figcaption>Thousands of years of erosion have created beautiful water tunnels such as this one</figcaption>
-            </figure>
-    
-            <figure>
-                <img src="images/Zion_River_Walk.jpg" alt="River Walk" width="200" height="200">
-                <figcaption>A popular river hike that everyone loves on a hot summer day </figcaption>
-            </figure>
-    
-            <figure>
-                <img src="images/Zion_Winter.jpg" alt="Zion in the Winter" width="200" height="200">
-                <figcaption>Zion in the winter offers different but just as amazing views</figcaption>
-            </figure>
+            <div class="gridstuff slideshow-container11">
+                <figure>
+                    <img src="images/Zion_Angels_Landing.jpg" class="active" alt="Angels Landing hike from afar" width="200" height="200">
+                    <figcaption class="active">One of the most popular (and dangerous) hikes Zion has to offer </figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="images/Zion_Large_Canyon.jpg" alt="Deep canyon in the summer" width="200" height="200">
+                    <figcaption>A typical day in Zion</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="images/Zion_River_Tunnel.jpg" alt="Water tunnel" width="200" height="200">
+                    <figcaption>Thousands of years of erosion have created beautiful water tunnels such as this one</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="images/Zion_River_Walk.jpg" alt="River Walk" width="200" height="200">
+                    <figcaption>A popular river hike that everyone loves on a hot summer day </figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="images/Zion_Winter.jpg" alt="Zion in the Winter" width="200" height="200">
+                    <figcaption>Zion in the winter offers different but just as amazing views</figcaption>
+                </figure>
+            </div>
             <!-- Brady Haisfield -->
         </div>
         <div>
             <h2>Sofia, Bulgaria</h2>
-            <img src="images/Sofia_Bulgaria.gif" alt="Sofia Bulgaria GIF" width="400" height="400">
-            <img src="images/Sofia_Bulgaria.png" alt="Sofia Bulgaria PNG" width="400" height="400">
-            <h3>Geographical Location: Europe</h3>
-    
-            <p>Sofia is the capital city of Bulgaria, a country located in Eastern Europe. It is part of the European Union and the primary language spoken is Bulgarian. The city’s population is around 1.3 million. In addition to its urban structures, Sofia also contains a mountain peak called “Vitosha”.</p>
-            <p>Vitosha is located 30 minutes from the capital's center, and can be reached by foot, car, and by lift. The peak has an elevation of 7,520 feet and during the summer months the average temperature is around 64 degrees fahrenheit. This makes it a great sight for any type of traveler who seeks the outdoors.</p>
-            <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/sofia_cathedral.jpeg" alt="A picture of a cathedral with a sunset in the background" width="200" height="200">
-                <figcaption>Located in the city's center, St. Alexander Nevsky Cathedral displays some of Sofia's grand architecture</figcaption>
-            </figure>
-    
-            <figure>
-                <img src="images/sofia_center.jpeg" alt="A picture of a crowded street with a mountain range in the background" width="200" height="200">
-                <figcaption>Vitosha boulevard is often packed with both locals and tourists and contains shops, restaurants, live music, and great views</figcaption>
-            </figure>
-    
-            <figure>
-                <img src="images/sofia_peak.jpeg" alt="A view of a city from the peak of a mountain during daytime" width="200" height="200">
-                <figcaption>The peak of Vitosha mountain offers a great view of Sofia from above</figcaption>
-            </figure>
-    
-            <figure>
-                <img src="images/sofia_street.jpeg" alt="A narrow street during sunset with locals walking and a public tram" width="200" height="200">
-                <figcaption>A picturesque street giving insight into the locals' lives and the city's public transport trams</figcaption>
-            </figure>
 
-            <figure>
-                <img src="images/sofia_brickroad.jpeg" alt="A city street with yellow bricks and some locals walking" width="200" height="200">
-                <figcaption>One of Sofia's famous roads, this street is paved with an interesting material: yellow cobblestones. Being one of the first streets in the entire city, it was first paved in 1907 and continues to be maintained to this day</figcaption>
-            </figure>
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/Sofia_Bulgaria.gif" id="moving" alt="Sofia Bulgaria GIF" width="400" height="400">
+                    <img src="images/Sofia_Bulgaria.png" id="static" alt="Sofia Bulgaria PNG" width="400" height="400">
+                </div>
+                <div class="text-box">
+                    <p>Sofia is the capital city of Bulgaria, a country located in Eastern Europe. It is part of the European Union and the primary language spoken is Bulgarian. The city’s population is around 1.3 million. In addition to its urban structures, Sofia also contains a mountain peak called “Vitosha”. Vitosha is located 30 minutes from the capital's center, and can be reached by foot, car, and by lift. The peak has an elevation of 7,520 feet and during the summer months the average temperature is around 64 degrees fahrenheit. This makes it a great sight for any type of traveler who seeks the outdoors.</p>
+                </div>
+            </div>      
+
+            <h3>Geographical Location: Europe</h3>
+            <h3>Photo Gallery</h3>
+            <div class="gridstuff slideshow-container12">
+                <figure>
+                    <img src="images/sofia_cathedral.jpeg" class="active" alt="A picture of a cathedral with a sunset in the background" width="200" height="200">
+                    <figcaption class="active">Located in the city's center, St. Alexander Nevsky Cathedral displays some of Sofia's grand architecture</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="images/sofia_center.jpeg" alt="A picture of a crowded street with a mountain range in the background" width="200" height="200">
+                    <figcaption>Vitosha boulevard is often packed with both locals and tourists and contains shops, restaurants, live music, and great views</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="images/sofia_peak.jpeg" alt="A view of a city from the peak of a mountain during daytime" width="200" height="200">
+                    <figcaption>The peak of Vitosha mountain offers a great view of Sofia from above</figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="images/sofia_street.jpeg" alt="A narrow street during sunset with locals walking and a public tram" width="200" height="200">
+                    <figcaption>A picturesque street giving insight into the locals' lives and the city's public transport trams</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/sofia_brickroad.jpeg" alt="A city street with yellow bricks and some locals walking" width="200" height="200">
+                    <figcaption>One of Sofia's famous roads, this street is paved with an interesting material: yellow cobblestones. Being one of the first streets in the entire city, it was first paved in 1907 and continues to be maintained to this day</figcaption>
+                </figure>
+            </div>
             <!-- Alyna Petrov -->
         </div>
         
         <div>
             <h2>Yellowstone</h2>
-    
-            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron still.">
-            <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
 
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/yellowstone_cauldron.gif" id="moving" width="400" alt="Bubbling cauldron still.">
+                    <img src="images/yellowstone_cauldron.jpg" id="static" width = "400" alt="Bubbling cauldron">
+                </div>
+                <div class="text-box">
+                    <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers. These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
+                </div>
+            </div>      
             <h3>Geographical Location: North America</h3>
-            <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
-            <p>These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
 
             <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/yellowstone_travertine.JPG" width = "200" alt="A large mound of multi-colored travertine">
-                <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
-            </figure>
+            <div class="gridstuff slideshow-container13">
+                <figure>
+                    <img src="images/yellowstone_travertine.JPG" class="active" width = "200" alt="A large mound of multi-colored travertine">
+                    <figcaption class="active">Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground">
-                <figcaption>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
-            </figure>
-
-
-            <figure>
-                <video width="200"  controls>
-                    <source src="images/yellowstone_prism.MOV">
-                    Your browser does not support the video tag.
-                </video>
-                <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground">
+                    <figcaption>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
+                </figure>
 
 
-            <figure>
-                <video width="200"  controls>
-                    <source src="images/yellowstone_buffalo.MOV">
-                    Your browser does not support the video tag.
-                </video>
-                <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
-            </figure>
+                <figure>
+                    <video width="200"  controls>
+                        <source src="images/yellowstone_prism.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
-                
-                <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
-            </figure>
+
+                <figure>
+                    <video width="200"  controls>
+                        <source src="images/yellowstone_buffalo.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
+                    
+                    <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
+                </figure>
+            </div>
             <!-- Colleen van Lent -->
         </div>
 
         <div>
             <h2>Grand Canyon</h2>
-    
-            <img src="images/grand_canyon.gif" width="400" alt="Grand Canyon still">
-            <img src="images/grand_canyon.jpg" width = "400" alt="Grand Canyon">
 
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/grand_canyon.gif" id="moving" width="400" alt="Grand Canyon still">
+                    <img src="images/grand_canyon.jpg" id="static" width = "400" alt="Grand Canyon">
+                </div>
+                <div class="text-box">
+                    <p>The Grand Canyon is a natural geological formation located in the state of Arizona. It is a steep-sided canyon carved by the Colorado River over millions of years. The canyon is known for its size, vibrant and varied colors, and intricate rock formations. It is one of the most famous and visited natural landmarks in the United States and around the world. Though the Grand Canyon is one of the most iconic places to travel, there are many dangers that come from such a terrain. Between 2010 and 2020, 134 have died, mainly due to extreme heat. You can see below, examples of people getting hurt due to the heat and carelessness.</p>
+                </div>
+            </div>  
+    
             <h3>Geographical Location: North America</h3>
-            <p>The Grand Canyon is a natural geological formation located in the state of Arizona. It is a steep-sided canyon carved by the Colorado River over millions of years. The canyon is known for its size, vibrant and varied colors, and intricate rock formations. It is one of the most famous and visited natural landmarks in the United States and around the world.</p>
-            <p>Though the Grand Canyon is one of the most iconic places to travel, there are many dangers that come from such a terrain. Between 2010 and 2020, 134 have died, mainly due to extreme heat. You can see below, examples of people getting hurt due to the heat and carelessness.</p>
+
             <p><a href ="https://www.cnn.com/2022/06/04/us/grand-canyon-death-hiker-canadian/index.html">A Canadian hiker has died at the Grand Canyon </a></p>
             <p><a href="https://www.tiktok.com/@reallifenewsandstories/video/7246756645869554987?is_from_webapp=1&web_id=7258067905045169710">reallifenewsandstories</a></p>
 
             <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/grand_canyon_sunset_snow.jpg" width = "200" alt="Sunset with Snowy Cliffs">
-                <figcaption>Overlook the Grand Canyon snowy cliffs while the sun is setting</figcaption>
-            </figure>
+            <div class="gridstuff slideshow-container14">
+                <figure>
+                    <img src="images/grand_canyon_sunset_snow.jpg" class="active" width = "200" alt="Sunset with Snowy Cliffs">
+                    <figcaption class="active">Overlook the Grand Canyon snowy cliffs while the sun is setting</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/grand_canyon_river.jpg" width = "200" alt="Valley with river">
-                <figcaption>Grand Canyon valley river during the day</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/grand_canyon_river.jpg" width = "200" alt="Valley with river">
+                    <figcaption>Grand Canyon valley river during the day</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/grand_canyon_cliff_people.jpg" width = "200" alt="People at a cliff">
-                <figcaption>Cliff overlooking the rest of the Grand Canyon</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/grand_canyon_goat.jpg" width = "200" alt="Goat on a cliff">
-                <figcaption>A mountain goat looking at the camera standing on top of rocks</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/grand_canyon_cliff_people.jpg" width = "200" alt="People at a cliff">
+                    <figcaption>Cliff overlooking the rest of the Grand Canyon</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/grand_canyon_goat.jpg" width = "200" alt="Goat on a cliff">
+                    <figcaption>A mountain goat looking at the camera standing on top of rocks</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/grand_canyon_waterfall.jpg" width = "200" alt="Waterfall in a valley">
-                <figcaption>Grand Canyon valley waterfall with trees</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/grand_canyon_waterfall.jpg" width = "200" alt="Waterfall in a valley">
+                    <figcaption>Grand Canyon valley waterfall with trees</figcaption>
+                </figure>
+            </div>
             <!-- Anna Hou -->
         </div>
         <div>
             <h2>Ebenalp Mountain, Switzerland</h2>
-    
-            <img src="images/ebenalp_sunrise.gif" width="400" alt="Mountain still">
-            <img src="images/ebenalp_seealpsee_lake.jpeg" width = "400" alt="Mountain">
+
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/ebenalp_sunrise.gif" id="moving" width="400" alt="Mountain still">
+                    <img src="images/ebenalp_seealpsee_lake.jpeg" id="static" width = "400" alt="Mountain">
+                </div>
+                <div class="text-box">
+                    <p>Ebenalp Mountain graces Switzerland's Appenzell Alps with rugged beauty. Hikers explore well-marked trails, and at the peak, the iconic Ebenalp Cliff offers panoramic views. Thrill-seekers can paraglide from its heights, while the mountaintop Berggasthaus Schäfler provides a unique stay immersed in alpine charm. For a memorable dining experience, the side-of-the-mountain Aescher Restaurant offers local cuisine amidst stunning vistas. Ebenalp Mountain is a breathtaking destination that blends natural splendor with exciting activities and culinary delights, catering to adventurous spirits.Just a stone's throw away from the majestic Ebenalp Mountain in Switzerland's Appenzell Alps, Seealpsee Lake stands as a serene counterpart to the rugged heights above. This picturesque alpine lake is a reward for those who embark on the hiking trails around Ebenalp. The crystal-clear waters of Seealpsee Lake beautifully reflect the towering peaks and lush meadows, creating an enchanting panorama. Amidst this natural wonder lies a charming lakeside restaurant where visitors can savor local delicacies while gazing upon the breathtaking scenery.</p>
+                </div>
+            </div>  
 
             <h3>Geographical Location: Central Europe</h3>
-            <p>Ebenalp Mountain graces Switzerland's Appenzell Alps with rugged beauty. Hikers explore well-marked trails, and at the peak, the iconic Ebenalp Cliff offers panoramic views. Thrill-seekers can paraglide from its heights, while the mountaintop Berggasthaus Schäfler provides a unique stay immersed in alpine charm. For a memorable dining experience, the side-of-the-mountain Aescher Restaurant offers local cuisine amidst stunning vistas. Ebenalp Mountain is a breathtaking destination that blends natural splendor with exciting activities and culinary delights, catering to adventurous spirits.</p>
-            <p>Just a stone's throw away from the majestic Ebenalp Mountain in Switzerland's Appenzell Alps, Seealpsee Lake stands as a serene counterpart to the rugged heights above. This picturesque alpine lake is a reward for those who embark on the hiking trails around Ebenalp. The crystal-clear waters of Seealpsee Lake beautifully reflect the towering peaks and lush meadows, creating an enchanting panorama. Amidst this natural wonder lies a charming lakeside restaurant where visitors can savor local delicacies while gazing upon the breathtaking scenery.</p>
 
             <h3>Photo Gallery</h3>
-            <figure>
-                <img src="images/ebenalp_cow.jpg" width = "200" alt="Elijah petting a cow on Ebenalp Mountain">
-                <figcaption>Petting a cow on Ebenalp</figcaption>
-            </figure>
+            <div class="gridstuff slideshow-container15">
+                <figure>
+                    <img src="images/ebenalp_cow.jpg" class="active" width = "200" alt="Elijah petting a cow on Ebenalp Mountain">
+                    <figcaption class="active">Petting a cow on Ebenalp</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/ebenalp_abys.jpeg" width = "200" alt="Abys on trail to Berggasthaus Schäfler">
-                <figcaption>Berggasthaus Schäfler trail</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/ebenalp_abys.jpeg" width = "200" alt="Abys on trail to Berggasthaus Schäfler">
+                    <figcaption>Berggasthaus Schäfler trail</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/ebenalp_seealpsee_overlook.jpeg" width = "200" alt="Overlook of Seealpsee lake">
-                <figcaption>Seealpsee lake overlook</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="images/ebenalp_cow_elijah.jpeg" width = "200" alt="Elijah with a cow in the background">
-                <figcaption>Cow above the clouds</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/ebenalp_seealpsee_overlook.jpeg" width = "200" alt="Overlook of Seealpsee lake">
+                    <figcaption>Seealpsee lake overlook</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/ebenalp_cow_elijah.jpeg" width = "200" alt="Elijah with a cow in the background">
+                    <figcaption>Cow above the clouds</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/ebenalp_lake_elijah.jpeg" width = "200" alt="Elijah on Seealpsee lake rocks">
-                <figcaption>Seealpsee lake rocks</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/ebenalp_lake_elijah.jpeg" width = "200" alt="Elijah on Seealpsee lake rocks">
+                    <figcaption>Seealpsee lake rocks</figcaption>
+                </figure>
+            </div>
             <!-- Elijah Cantu -->
         </div>
     </main>
+    <script src="javascript/travel.js"></script>
 </body>
 </html>

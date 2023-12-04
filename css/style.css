@@ -1,0 +1,570 @@
+nav {
+    z-index: 2;
+}
+
+.grid-list {
+    background-image: url('../images/19c834966c1a42f4900ee2cac318e36d.webp');
+    height: 100px;
+}
+
+body.light-mode {
+    background-color: #F0F8FF;
+}
+
+body.dark-mode {
+    background-color: black;
+}
+
+figcaption.light-mode {
+    color: black;
+}
+
+figcaption.dark-mode {
+    color: white;
+}
+
+    
+
+p {
+    padding: 10px;
+}
+
+a.light-mode {
+    font-weight: 400;
+    color: black;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+ nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none; 
+     font-size: 20px; 
+}
+
+li {
+    /* display: inline-block; */
+    height: 30px;
+    color: black;
+    margin-right: 30px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 12px;
+}
+
+div {
+    padding: 5px;
+}
+
+ul.grid-list {
+    grid-template-columns: repeat(4, 1fr);
+    text-decoration: none;
+    text-align: center;
+}
+  
+ul.poop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+} */
+
+ul.poop li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+
+nav li {
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+
+nav li:hover {
+    text-decoration: underline;
+    animation: wavy 0.5s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    nav li:hover {
+        text-decoration: underline;
+        animation: none;
+    }
+}
+
+@keyframes wavy {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#skip {
+    text-transform: uppercase;
+}
+
+.thumbnail {
+    border: 20px solid black;
+    margin: 10px;
+    width: 200px;
+    display: block;
+}
+
+img, video {
+    border: 3px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    size: 25%;
+    box-shadow: inset 0 0 0 10px lightblue;
+}
+
+.gridstuff img, video {
+    border: 3px solid blue;
+    size: auto;
+}
+
+.gridstuff {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.overview {
+    color: black;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.about {
+    align-items: center;
+}
+
+.about-image img {
+    max-height: 50%;
+    max-width: 50%;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    margin: auto;
+}
+
+img, video {
+    width: 30%;
+}
+
+ul.recipes li:hover {
+    color: transparent;
+}
+
+h3 {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.poop li {
+    transition: font-size 0.3s ease;
+}
+
+  
+  /* Define the hover effect for h3 elements */
+/* li:hover {
+    font-size: 20px; /* You can set the expanded font size here */
+/* } */ */
+
+h2 {
+    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-right: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+
+
+
+
+ol {
+    list-style-type: decimal;
+    margin-left: 25px;
+}
+
+
+.paddingclass {
+    padding: 20px;
+}
+
+ul.grid-list {
+    font-size: 20px;
+}
+
+
+@keyframes example {
+    from {background-color: #6495ED;}
+    to {background-color: white;}
+}
+h1 {
+    animation-name: example;
+    animation-duration: 4s;
+}
+img[src$=".gif"] {
+    display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    h1 {
+        animation-name: none;
+    }
+    
+    img[src$=".gif"] {
+        display: none;
+    }
+}
+
+.gridstuff {
+    justify-content: center;
+}
+
+.gridstuff img, video, figcaption {
+    display: none;
+}
+
+.gridstuff img.active, video.active, figcaption.active {
+    display: block;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hamburger .grid-list.show-dropdown {
+    display: block;
+    background-color: white;
+    position: absolute;
+}
+
+.stickynav {
+    display: none;
+}
+
+.grid-list.show-dropdown li {
+    display: block;
+    text-align: center;
+    padding: 2px;
+}
+
+
+
+.hamburger .navigationbar {
+    font-size: 40px;
+    cursor: pointer;
+    display: block; 
+}
+
+.hamburger .grid-list {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+
+    h1 {
+        animation-name: none;
+    }
+    .hamburger .navigationbar {
+        display: none; 
+    }
+
+
+    .hamburger .grid-list {
+        display: grid;
+        align-items: center; 
+        padding-left: 20px;
+        padding-right: 20px;
+    }   
+
+    .grid-list {
+        background-color: gray;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+    }
+
+    .gridstuff {
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid black;
+    }
+
+    h1 {
+        padding: 40px;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+    
+    img:hover {
+        animation: spin 3s linear;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        img:hover {
+            animation: none;
+        }
+    }
+}
+
+#skip {
+    position: absolute;
+    left: -99999999px;
+    overflow: hidden;
+    top: auto;
+}
+
+#skip:focus {
+    z-index: 3;
+    left: 0px;
+    text-align: center;
+}
+
+
+@media (min-width: 1024px) {
+    .gridstuff {
+        text-align: center;
+        border: none;
+    }
+
+}
+
+h1 {
+    animation-name: none;
+}
+
+img, video {
+    transition: transform 0.3s ease;
+}
+
+
+
+img:hover, video:hover {
+    transform: scale(0.9);
+    animation: resetTransform 2s ease forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img, video {
+        transition: none;
+        
+    }
+    img:hover, video:hover {
+        transform: scale(1);
+    }
+}
+
+#static {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #static {
+        display: block;
+    }
+    #moving {
+        display: none;
+    }
+}
+
+body {
+    font-family: 'Trirong';
+}
+
+
+
+
+
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3; 
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: #f1c40f; 
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Sun icon */
+  .slider:before {
+    background-image: url('../images/sun-icon.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Moon icon */
+  input:checked + .slider:before {
+    background-image: url('../images/moon-icon.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
+
+p.light-mode {
+    color: black;
+}
+
+a.light-mode {
+    color: black;
+}
+
+nav a.light-mode {
+    color: black;
+}
+
+.thumbnail.light-mode {
+    border: 20px solid black;
+}
+
+a.dark-mode {
+    color: white;
+}
+
+nav a.dark-mode {
+    color: white;
+}
+
+.thumbnail.dark-mode {
+    border: 20px solid white;
+}
+
+h1.light-mode, h2.light-mode, p.light-mode, h3.light-mode {
+    color: black;
+}
+
+h1.dark-mode, h2.dark-mode, p.dark-mode, h3.dark-mode {
+    color: white;
+}
+
+li.light-mode {
+    color: black;
+}
+
+li.dark-mode {
+    color: white;
+}
+
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.current.dark-mode {
+    background-color: grey;
+}
+
+#petFact {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.fun {
+    text-align: center;
+}
+
